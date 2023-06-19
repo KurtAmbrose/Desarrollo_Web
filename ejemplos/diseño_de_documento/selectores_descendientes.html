@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-419">
+    <head>
+        <meta charset="utf-8">
+        <title>Seletores Descendientes</title>
+        <style>
+            /**Todos los elementos li que están dentro de elemento artículo*/
+            article li{
+                color: aqua;
+                font-size: 20px;
+                font-style: inherit;
+                width: 500px;
+            }
+            /**Elementos h3 que están dentro de sección o artículo*/
+            section h3, article h3{
+                color: brown;
+                background-color: blanchedalmond;
+                font-style: italic;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Selectores Combinados parte 3: Descendientes</h1>
+        <section>
+            <h3>Tabla de contenidos:</h3>
+            <ul>
+                <li>Tema 1</li>
+                <li>Tema 2</li>
+                <li>Tema 3</li>
+            </ul>
+            <h3>Hola :).</h3>
+        </section>
+        <article>
+            <h3>Lista de compras:</h3>
+            <ol>
+                <li>Pan dulce</li>
+                <li>Jamón</li>
+                <li>Queso</li>
+                <li>Detergente</li>
+                <li>Comida para el perro</li>
+                <li>Papel de baño</li>
+            </ol>
+        </article>
+    </body>
+</html>
