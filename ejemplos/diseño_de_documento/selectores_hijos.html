@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-419">
+    <head>
+        <meta charset="utf-8">
+        <title>Selectores Hijos.</title>
+        <style>
+
+            /**Elemento artículo que es hijo directo de un elemento sección.*/
+            section > article {
+                color: green;
+                font-size: 24px;
+                font-style: oblique;
+            }
+
+            /**Elemento h2 que es un hijo directo del elemento sección*/
+
+            section > h2 {
+                color: chartreuse;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Selectores Combinados parte 2: Selectores hijos</h1>
+        <section>
+            <h2>Encabezado chido &#60;3.</h2>
+            <div>
+                <article>Artículo que está dentro de un DIV y a su vez de una SECCIÓN</article>
+            </div>
+        </section>
+        <section>
+            <article>
+                Artículo que es hijo directo de la sección.
+            </article>
+        </section>
+        <h2>Otro encabezado chido :3.</h2>
+    </body>
+</html>
