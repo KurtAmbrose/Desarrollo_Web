@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-419">
+    <head>
+        <meta charset="utf-8">
+        <title>Selectores de tipo Pseudo clase</title>
+        <style>
+
+            header li {
+                list-style: none;
+            }
+
+            /** Creación de los botones a partir de los links que se ponen en HTML.*/
+            a:link, a:visited {
+                text-decoration: none;
+                background-color: rgb(87, 161, 12);
+                border: 2px solid rgb(42, 197, 218);
+                color: black;
+                display: block;
+                width: 200px;
+                text-align: center;
+                margin-bottom: 1px;
+            }
+
+            /** Cuando el cursor se acerca a los botones y está a punto de clickearlos */
+
+            a:hover, a:active {
+                background-color: chocolate;
+                border: 2px solid rgb(175, 54, 135);
+                color: purple;
+            }
+
+            /**Con esta pseudo clase [nth-child()], se puede escojer de manera específica el elemento que quieras modificar.*/
+            header li:nth-child(3){
+                font-size: 24px;
+            }
+
+            /**También se puede realizar especificaciones como rellenar todos los que estén en posiciones numéricas pares o nones*/
+            section div:nth-child(odd){
+                background-color: gray;
+            }
+
+            section div:nth-child(even){
+                background-color: cadetblue;
+            }
+
+            section div:nth-child(n+3):hover{
+                background-color: crimson;
+                cursor: pointer;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <h1>Selector de tipo Pseudo Clase</h1>
+
+        <header>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="https://www.youtube.com/watch?v=ucuVGQdQbBY" target="_blank">Video de los poderosísimos Cínicos</a></li>
+                <li><a href="https://www.youtube.com/watch?v=HqofunNW75g&t=3305s" target="_blank">Video de los inigualables Pensionados :D</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <div>HOLA</div>
+            <div>SÓLO</div>
+            <div>SOMOS</div>
+            <div>UN</div>
+            <div>CONJUNTO</div>
+            <div>DE</div>
+            <div>DIVS</div>
+            <div>AMONTONADOS</div>
+            <div>&#60;3</div>
+        </section>
+    </body>
+</html>
