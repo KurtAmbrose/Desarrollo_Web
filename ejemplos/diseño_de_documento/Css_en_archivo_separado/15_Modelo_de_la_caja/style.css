@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkgray;
+}
+
+#box {
+    background-color: blue;
+    padding: 20px;
+    border: 5px solid black;
+    width: 300px;
+    height: 100px;
+    margin-top: 50px;
+    overflow: auto; 
+}
+
+#content {
+    background-color: chartreuse;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
