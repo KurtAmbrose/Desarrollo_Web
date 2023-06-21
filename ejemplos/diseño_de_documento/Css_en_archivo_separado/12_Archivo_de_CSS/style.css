@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(155, 155, 155);
+    font-size: 20px;
+}
+
+li h3.company {
+    background-color: chartreuse;
+    width: 350px;
+    font-size: 30px;
+} 
+
+section li.data {
+    list-style: lower-greek;
+}
+
+.company:hover, .company:active{
+    background-color: brown;
+    color: chartreuse;
+    border: red;
+    cursor: none;
+}
+
+li li:hover{
+    background-color: green;
+    color:chocolate;
+    border:rgb(155, 155, 155);
+    width: 500px;
+    cursor: none;
+}
