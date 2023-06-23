@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+div#container {
+    background-color: cadetblue;
+    position: relative;
+    top: 60px;
+}
+
+p {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+#p1 {
+    background-color: chartreuse;
+    position: relative;
+    top: 65px;
+    left: 65px;
+}
+
+#p2 {
+    background-color: rgb(255, 0, 0);
+}
+
+#p3 {
+    background-color: rgb(122, 16, 34);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#p4 {
+    background-color: rgb(2, 157, 204);
+}
