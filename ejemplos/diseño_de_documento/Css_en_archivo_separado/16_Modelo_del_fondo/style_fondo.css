@@ -1,0 +1,7 @@
+#bg {
+    width: 1000px;
+    height: 500px;
+    background-color: cadetblue;
+    background-image: url("./spartan.png");
+    background-position: right bottom;
+}
