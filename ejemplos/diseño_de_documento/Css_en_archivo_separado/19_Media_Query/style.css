@@ -1,0 +1,64 @@
+/************** ESTILOS BASE ****************/
+
+h1 {
+    border: 1px solid red;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+p {
+    border: 5px dashed black;
+    margin-bottom: 15px;
+}
+
+#p1 {
+    background-color: brown;
+    width: 300px;
+    height: 300px;
+}
+
+#p2 {
+    background-color: blueviolet;
+    width: 50px;
+    height: 50px;
+}
+
+/************** Sólo para dispositivos con pantalla grande ****************/
+
+@media (min-width: 1200px) {
+    #p1{
+        width: 80%;
+    }
+
+    #p2 {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+/************** Sólo para dispositivos con pantalla mediana ****************/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #p1{
+        width: 50%;
+    }
+
+    #p2 {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/************** Sólo para dispositivos con pantalla pequeña ****************/
+
+@media (min-width: 350px) and (max-width: 1099px) {
+    #p1{
+        width: 40%;
+    }
+
+    #p2 {
+        width: 70px;
+        height: 70px;
+    }
+}
