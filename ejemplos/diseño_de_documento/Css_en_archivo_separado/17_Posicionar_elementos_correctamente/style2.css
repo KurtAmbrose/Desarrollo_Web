@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+div {
+    /*background-color: rgb(141, 216, 179);*/
+}
+
+p{
+    width: 50%;
+    /*border: 2px solid black;*/
+    float: left;
+    padding: 10px;
+}
+
+#p1 {
+    /*background-color: cadetblue;*/
+}
+
+#p2 {
+    /*background-color: rgb(50, 243, 169);*/
+}
+
+section {
+    clear: left;
+}
