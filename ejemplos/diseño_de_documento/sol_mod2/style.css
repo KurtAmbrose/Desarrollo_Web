@@ -2,36 +2,107 @@
 
 *{
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', monospace;
 }
 
 h1 {
-    margin-bottom: 5%; 
+    margin-bottom: 7%; 
     margin-top: 3%;  
     text-align: center; 
 }
 
 .row{
     width: 100%;
+    height: 20%;
 }
 
-.alimento{
+.elemento-1, .elemento-2, .elemento-3{
+    float: left;
+}
+
+p{
     background-color: rgb(145, 145, 145);
     border: 2px solid black;
-    height: 150px;
-    width: 60%;
+    height: 190px;
+    width: 97%;
     margin-right: auto;
     margin-left: auto;
 }
 
-/*------------------- TELÉFONOS -------------------------------*/
+.pollo{
+    float: right;
+    background-color: rgb(202, 103, 103);
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 45%;
+    padding-top: 1.5%;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: bold;
+    clear: left;
+}
+
+.res{
+    float: right;
+    background-color: rgb(223, 49, 49);
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 45%;
+    padding-top: 1.5%;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(233, 233, 233);
+    clear: left;
+}
+
+.sushi{
+    float: right;
+    background-color: rgb(230, 219, 71);
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 45%;
+    padding-top: 1.5%;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: bold;
+    clear: left;
+}
+
+.descrip{
+    float: left;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+}
+
+/*------------------- Computadoras -------------------------------*/
 
 @media (min-width: 992px){
-    .elemento{
-        float: left;
-        border: 2px dashed green;
-        width: 32%;
+    .elemento-1, .elemento-2, .elemento-3{
+        width: 33.3%; 
     }
 }
 
+/*------------------- Télefonos -------------------------------*/
 
+@media (min-width: 768px) and (max-width: 991px){
+    .elemento-1, .elemento-2{
+        width: 50%;
+    }
+
+    .elemento-3{
+        width: 100%;
+    }
+}
+
+/*------------------- Celulares -------------------------------*/
+
+@media (max-width: 767px) {
+    .elemento-1, .elemento-2, .elemento-3{
+        width: 100%;
+    }
+}
