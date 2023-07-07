@@ -21,9 +21,9 @@ h1 {
 }
 
 p{
-    background-color: rgb(145, 145, 145);
+    background-color: rgb(231, 231, 231);
     border: 2px solid black;
-    height: 190px;
+    height: 150px;
     width: 97%;
     margin-right: auto;
     margin-left: auto;
@@ -76,20 +76,20 @@ p{
     padding-right: 8px;
     width: auto;
     height: auto;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 /*------------------- Computadoras -------------------------------*/
 
-@media (min-width: 1920px){
+@media (min-width: 992px) {
     .elemento-1, .elemento-2, .elemento-3{
         width: 33.3%; 
     }
 }
 
-/*------------------- Télefonos -------------------------------*/
+/*------------------- Tablet -------------------------------*/
 
-@media (min-width: 1536px) and (max-width: 1919px){
+@media (min-width: 769px) and (max-width: 991px) {
     .elemento-1, .elemento-2{
         width: 50%;
     }
@@ -101,7 +101,7 @@ p{
 
 /*------------------- Celulares -------------------------------*/
 
-@media (min-width: 1080px) {
+@media (max-width: 768px) {
     .elemento-1, .elemento-2, .elemento-3{
         width: 100%;
     }
