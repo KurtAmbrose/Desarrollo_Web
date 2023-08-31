@@ -20,3 +20,43 @@ body {
     margin: 10px 10px 15px 15px;
    
 }
+
+#unsc {
+    width: 70px;
+    height: 50px;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+.navbar-brand h1 {
+    font-family: 'Courier New', monospace;
+    color: rgb(13, 13, 38);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand p, .navbar-brand p span a{ /** CLASIFICADO */
+    color: rgb(9, 9, 9);
+    text-transform: uppercase;
+    font-size: 70%;
+    margin-top: 5px;
+    line-height: .75;
+}
+.navbar-brand p span { /** LETRAS DE LA UNSC */
+    vertical-align: middle;
+}
+.navbar-brand p span a:hover, .navbar-brand p span a:focus { /** LETRAS DE LA UNSC */
+    text-decoration: none;
+    color:rgb(155, 1, 1);
+}
