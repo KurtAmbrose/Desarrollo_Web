@@ -85,9 +85,69 @@ body {
     text-transform: uppercase;
     font-weight: bolder;
 }
-
 #celular div { /** denegado :) */
     color:#120b3b;
     text-align: right;
     padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #120b3b;
+}
+
+.navbar-header button.navbar-toggle {
+    clear:both;
+    margin-top: -30px;
+}
+/*********** FIN DEL ENCABEZADO ************/
+
+/*********** Media queries para los Dispositivos grandes **********/
+@media (min-width: 1200px) {
+
+}
+
+/*********** Media queries para los Dispositivos mediano **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    /** Encabezado */
+    #logo {
+        width: 110px;
+        height: 145px;
+        margin: 5px 5px 10px 10px;
+    }
+    /** Fin del encabezado */
+}
+
+/*********** Media queries para los Dispositivos pequeños **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/*********** Media queries para los Dispositivos muy pequeños **********/
+@media (max-width: 767px) {
+    /** Encabezado */
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 { /** Spartan Ops */
+        padding-top: 10px;
+        font-size: 3vw; /** 1vw = 1% de viewport width */
+    }
+    .navbar-brand p { /** Clasificado */
+        font-size: .6em;
+        margin-top: 12px;
+    }
+    .navbar-brand p img { /** Letras de la UNSC */
+        height: 20px;
+    }
+
+    #collapsable-nav a { /** Collapsed nav menu glyph */
+        font-size: 1.2em;
+    }
+
+    #collapsable-nav a span {
+        font-size: 1em;
+        margin-right: 6px;
+    }
+    /** Fin del encabezado */
 }
