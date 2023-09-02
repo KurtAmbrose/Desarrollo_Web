@@ -101,9 +101,18 @@ body {
 }
 /*********** FIN DEL ENCABEZADO ************/
 
+.contenedor .jumbotron {
+    box-shadow: 0 0 50px rgb(50, 50, 58);
+    border: 2px solid rgb(50, 50, 58);
+}
+
 /*********** Media queries para los Dispositivos grandes **********/
 @media (min-width: 1200px) {
-
+    .contenedor .jumbotron {
+        background: url(../imagenes/IV_1200.jpg) no-repeat;
+        height: 675px;
+        background-position: center center;
+    }
 }
 
 /*********** Media queries para los Dispositivos mediano **********/
@@ -115,10 +124,25 @@ body {
         margin: 5px 5px 10px 10px;
     }
     /** Fin del encabezado */
+
+    /** Contenido principal */
+    .contenedor .jumbotron {
+        background: url(../imagenes/IV_992.png) no-repeat;
+        height: 558px;
+        background-position: center center;
+    }
+    /** Fin del contenido principal */
 }
 
 /*********** Media queries para los Dispositivos pequeños **********/
 @media (min-width: 768px) and (max-width: 991px) {
+    /** Contenido principal */
+    .contenedor .jumbotron {
+        background: url(../imagenes/IV_768.png) no-repeat;
+        height: 432px;
+        background-position: center center;
+    }
+    /** Fin del contenido principal */
     
 }
 
@@ -149,5 +173,32 @@ body {
         font-size: 1em;
         margin-right: 6px;
     }
+
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: rgb(117, 104, 145);;
+        color: rgb(18, 6, 73);
+    }
+    .btn {
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+    #xs-deliver {
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
     /** Fin del encabezado */
+
+    /** Contenido principal */
+    .contenedor .jumbotron {
+        margin-top: 30px;
+        padding: 0;
+        background-position: center center;
+    }
 }
