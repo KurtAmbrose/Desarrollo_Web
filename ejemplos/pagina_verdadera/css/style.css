@@ -101,10 +101,54 @@ body {
 }
 /*********** FIN DEL ENCABEZADO ************/
 
+
+
+
+/*********** CONTENIDO PRINCIPAL ***********/
 .contenedor .jumbotron {
     box-shadow: 0 0 50px rgb(50, 50, 58);
     border: 2px solid rgb(50, 50, 58);
 }
+
+#unidades-tile, #ops-tile, #mapa {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #120b3b;
+    overflow: hidden;
+}
+#unidades-tile:hover, #ops-tile:hover, #mapa:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#unidades-tile {
+    background: url(../imagenes/unidades.png) no-repeat;
+    background-position: center;
+}
+
+#ops-tile {
+    background: url(../imagenes/ops.jpg) no-repeat;
+    background-position: center;
+}
+
+#unidades-tile span, #ops-tile span, #mapa span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+/*********** FIN DEL CONTENIDO PRINCIPAL ***********/
+
+
+
 
 /*********** Media queries para los Dispositivos grandes **********/
 @media (min-width: 1200px) {
@@ -200,5 +244,27 @@ body {
         margin-top: 30px;
         padding: 0;
         background-position: center center;
+    }
+
+    #unidades-tile, #ops-tile {
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+}
+
+
+/*********** Media queries para los Dispositivos demasiado pequeños (e.g., Iphone 5) **********/
+@media (max-width: 479px) {
+    /** Encabezado */
+    .navbar-brand h1 {
+        padding-top: 5px;
+        font-size: 6vw;
+    }
+    /** Fin del encabezado */
+
+    /** Contenido principal */
+    #unidades-tile, #ops-tile {
+        width: 280px;
+        margin: 0 auto 15px;
     }
 }
