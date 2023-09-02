@@ -102,6 +102,39 @@ body {
 /*********** FIN DEL ENCABEZADO ************/
 
 
+/*********** PIE DE PÁGINA ************/
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #0f0f0f;
+    border-top: 0;
+}
+
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+
+#Dirigentes, #Notas-oni {
+    line-height: 2;
+}
+#Dirigentes > span, #Notas-oni > span {
+    font-size: 1.3em;
+}
+
+#Notas-oni p {
+    color:rgb(69, 16, 182);
+    font-size: .8em;
+    line-height: 1.8;
+}
+
+#testimonios {
+    font-style: italic;
+}
+#testimonios p:nth-child(2) {
+    margin-top: 25px;
+}
+/*********** FIN DEL PIE DE PÁGINA ************/
 
 
 /*********** CONTENIDO PRINCIPAL ***********/
@@ -236,6 +269,19 @@ body {
         font-size: .7em;
         letter-spacing: .1em;
         text-transform: uppercase;
+    }
+    /** Fin del encabezado */
+
+    /** Pie de página */
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .panel-footer section:nth-child(3) {
+        margin-bottom: 0; /* El margen ya existe en todo el row */
+    }
+    .panel-footer section hr {
+        width: 50%;
     }
     /** Fin del encabezado */
 
