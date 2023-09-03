@@ -214,7 +214,58 @@ body {
 }
 /*********** FIN DE LA PÁGINA DE UNIDADES ************/
 
+/*********** PÁGINA DE SIERRA **********/
+#subtitulo {
+    margin-bottom: 40px;
+}
 
+.item-tile {
+    margin-bottom: 25px;
+}
+.item-tile hr {
+    width: 80%;
+}
+
+.item-tile .item-cantidad {
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.item-tile .item-cantidad span {
+    font-size: .6em;
+}
+
+.foto-unit {
+    position: relative;
+    border: 2px solid rgb(50, 50, 58);
+    overflow: hidden;
+    padding: 0; 
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.foto-unit div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #0f0f0f;
+    text-align: center;
+}
+
+.item-descrip {
+    padding-right: 30px;
+}
+h3.item-nom {
+    margin: 0 0 10px;
+}
+.item-detalles {
+    font-size: .9em;
+    font-style: italic;
+}
+/*********** FIN DE PÁGINA DE SIERRA **********/
 
 /*********** Media queries para los Dispositivos grandes **********/
 @media (min-width: 1200px) {
@@ -328,6 +379,16 @@ body {
     #unidades-tile, #ops-tile {
         width: 360px;
         margin: 0 auto 15px;
+    }
+
+    .foto-unit {
+        margin-right: auto;
+    }
+    .item-tile .item-cantidad {
+        text-align: center;
+    }
+    .item-descrip {
+        text-align: center;
     }
 }
 
