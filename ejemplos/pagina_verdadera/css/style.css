@@ -137,7 +137,7 @@ body {
 /*********** FIN DEL PIE DE PÁGINA ************/
 
 
-/*********** CONTENIDO PRINCIPAL ***********/
+/*********** CONTENIDO PRINCIPAL DE LA PÁGINA INCIAL ***********/
 .contenedor .jumbotron {
     box-shadow: 0 0 50px rgb(50, 50, 58);
     border: 2px solid rgb(50, 50, 58);
@@ -178,8 +178,41 @@ body {
     opacity: .8;
 }
 
-/*********** FIN DEL CONTENIDO PRINCIPAL ***********/
+/*********** FIN DEL CONTENIDO PRINCIPAL DE LA PÁGINA INICIAL ***********/
 
+
+
+/*********** PÁGINA DE UNIDADES ************/
+
+.unit-tile {
+    position: relative;
+    border: 2px solid rgb(50, 50, 58);
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+
+.unit-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+.unit-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#Titulo-unidades + div {
+    margin-bottom: 50px;
+}
+/*********** FIN DE LA PÁGINA DE UNIDADES ************/
 
 
 
@@ -308,9 +341,19 @@ body {
     }
     /** Fin del encabezado */
 
-    /** Contenido principal */
+    /** Contenido principal de la página principal */
     #unidades-tile, #ops-tile {
         width: 280px;
         margin: 0 auto 15px;
+    }
+
+    /** Contenido principal de la página de unidades */
+    .col-xxs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
     }
 }
