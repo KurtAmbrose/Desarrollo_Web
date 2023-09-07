@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(99, 99, 99);
+    background-color: rgb(39, 39, 39);
     font-family: 'Kanit', sans-serif;
     color: #ffffff;
     font-size: 15px
@@ -8,7 +8,7 @@ body {
 /*************** ENCABEZADO  DE LA PÁGINA ***************/
 
 #encabezado {
-    background-color: rgb(52, 6, 105);
+    background-color: rgb(124, 132, 199);
     border: 0;
     border-radius: 0;
     padding-bottom: 15px;
@@ -20,12 +20,52 @@ body {
 
 .navbar-brand h1 {
     font-family: 'Courier New', monospace;
-    color: rgb(153, 153, 224);
+    color: rgb(40, 40, 58);
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
+    text-shadow: 1px 1px 1px #706bc0;
     margin-top: 0;
     margin-bottom: 0;
     line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list a {
+    color:#120b3b;
+    text-align: center;
+}
+#nav-list a:hover {
+    background: #fff;
+}
+#nav-list a span {
+    font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #120b3b;
+}
+
+.navbar-header button.navbar-toggle {
+    clear:both;
+    margin-top: -30px;
+}
+
+/******************* FIN DEL ENCABEZADO ******************/
+
+.titulo {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.text-center .link_video {
+    text-transform: uppercase;
+    color: #e9da05;
+    text-transform: none;
+    font-weight: bolder;
 }

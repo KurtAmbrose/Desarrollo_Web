@@ -16,17 +16,52 @@
         <header>
             <nav id="encabezado" class="navbar navbar-default">
                 <div class="contenedor">
-                    <div class="navbar-header">
-                        <div class="navbar-brand">
-                            <h1>Food, LLC</h1>
-                        </div>
-
-                        <button type="button" class="navbar-toggle collapsed" 
+                  <div class="navbar-header">
+                    <div class="navbar-brand">
+                      <a href="index.html"><h1>FOOD, LLC</h1></a>
                     </div>
-                </div>
-            </nav>
+        
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+        
+                  <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                      
+                      <li>
+                        <a href="#">
+                          <span class="glyphicon glyphicon-fire"></span><br class="hidden-xs">
+                          Pollo</a>
+                      </li>
+        
+                      <li>
+                        <a href="#">
+                          <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">
+                          Carne</a>
+                      </li>
+                      
+                      <li>
+                        <a href="#">
+                          <span class="glyphicon glyphicon-leaf"></span><br class="hidden-xs">
+                          Sushi</a>
+                      </li>
+                    </ul> <!-- fin de la #nav-list-->
+                  </div> <!-- .collapse .navbar-collapse -->
+                </div> <!-- fin del contenido-->
+            </nav> <!-- fin del encabezado-->
         </header>
 
+        <div class="contenido-principal contenedor">
+
+            <h2 class="titulo text-center">Nuestro Menú</h2>
+            <div class="text-center">
+                Aquí hay comida <a href="https://www.youtube.com/watch?v=QKAn6CZ64g0" target="_blank"><span class="link_video">¡¡¡shinaa!!!</span></a>
+            </div>
+        </div>
         <!-- jQuery (Los Pluggins de bootstrap dependen de ellos)-->
         <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
