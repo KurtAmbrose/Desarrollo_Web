@@ -58,9 +58,14 @@ body {
 
 /******************* FIN DEL ENCABEZADO ******************/
 
+/******************* PAGINA INICIAL ******************/
+
 .titulo {
     font-weight: bold;
-    margin-bottom: 25px;
+}
+
+div.contenido-principal .text-center {
+    margin-bottom: 30px;
 }
 
 .text-center .link_video {
@@ -68,4 +73,28 @@ body {
     color: #e9da05;
     text-transform: none;
     font-weight: bolder;
+}
+
+#comida-tile {
+    background-color: rgb(124, 62, 59);
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    border: 2px dotted #ffffff;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+#nombre {
+    margin-bottom: 25px;
+    font-weight: bolder;
+}
+
+#comida-tile p {
+    text-align: left;
+    font-size: .9em;
+    margin-top: 10px;
 }
