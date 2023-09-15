@@ -1,4 +1,7 @@
 function ejemplo_concatenar_strings() {
+
+    console.log("\n\n------CONCATENAR STRINGS--------\n\n");
+
     let string = "\n\n\nHola :],";
     let string2 = "\n\n\nBuenas xd";
     string += " soy el ejemplo de concatenar strings uwu"; //SE PUEDEN CONCATENAR STRINGS EN JS SIMPLEMENTE SUMANDOLAS !!!!
@@ -78,6 +81,24 @@ function ejemplo_comparacion_strings() {
     
 }
 
+function ejemplo_comparacion_operadores() {
+
+    console.log("\n\n------ COMPARACIÓN CON OPERADORES LÓGICOS TIPO 'OR' O 'AND' --------\n\n")
+
+    if (false || null || undefined || "" || 0 || NaN)
+    {
+        console.log("\n\n->Esta línea de código jamás se va a ejecutar :>.\nY si se ejecuta...Hola.\n\n");
+    }
+    else
+    {
+        console.log("\n\nTodo falso alv!!!!!\n\n");
+    }
+    if(true && "hello" && 1 && -1 && "false") 
+    {
+        console.log("\n\nTodo verdadero :D!!!!!\n\n");
+    }
+}
+
 
 
 /** ---------- FUNCIÓN MAIN --------------- */
@@ -87,6 +108,7 @@ function main () {
     ejemplo_operadores_matematicos();
     ejemplo_comparacion();
     ejemplo_comparacion_strings();
+    ejemplo_comparacion_operadores();
 }
 
 /** EJECUCIÓN DE FUNCIONES -------
