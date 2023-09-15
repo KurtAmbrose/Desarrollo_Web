@@ -99,6 +99,39 @@ function ejemplo_comparacion_operadores() {
     }
 }
 
+function retornar_objetos () {
+
+    console.log("\n\n------ RETORNO DE OBJETOS --------\n\n")
+    return {
+        nombre: "Jacobo"
+    };
+
+}
+
+function loop_for() {
+    let num, i, j;
+
+    console.log("\n\n------CICLO FOR--------\n\n");
+
+    num=13.4567;
+
+    for(i=0; i<6; i++)
+    {
+        num=num*12 + i;
+
+        for(j=0; j<6; j++)
+        {
+            console.log("010101010101");
+        }
+
+        console.log("\n");
+
+    }
+
+    console.log("\n\n\nEl valor de sum es este ---> " + (num).toFixed(4) + "\n\n");
+
+}
+
 
 
 /** ---------- FUNCIÓN MAIN --------------- */
@@ -109,6 +142,9 @@ function main () {
     ejemplo_comparacion();
     ejemplo_comparacion_strings();
     ejemplo_comparacion_operadores();
+    console.log(retornar_objetos());
+    console.log("\n");
+    loop_for();
 }
 
 /** EJECUCIÓN DE FUNCIONES -------
