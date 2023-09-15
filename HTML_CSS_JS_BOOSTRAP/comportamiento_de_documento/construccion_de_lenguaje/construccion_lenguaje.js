@@ -1,6 +1,6 @@
 function ejemplo_concatenar_strings() {
-    var string = "\n\n\nHola :],";
-    var string2 = "\n\n\nBuenas xd";
+    let string = "\n\n\nHola :],";
+    let string2 = "\n\n\nBuenas xd";
     string += " soy el ejemplo de concatenar strings uwu"; //SE PUEDEN CONCATENAR STRINGS EN JS SIMPLEMENTE SUMANDOLAS !!!!
     string2 = " yo si que cambié :v";
 
@@ -12,24 +12,24 @@ function ejemplo_concatenar_strings() {
 }
 
 function prueba (a) {
-    console.log("\n\nEjemplo de la función que se manda a llamar con parametros dentro de la función de 'operadores_matemáticos' que es a/5 ---> " + a/5 + "\n\n");
+    console.log("\n\nEjemplo de la función que se manda a llamar con parametros dentro de la función de 'operadores_matemáticos' que es a/5 ---> " + (a/5).toFixed(3) + "\n\n");
 }
 
 function ejemplo_operadores_matematicos() {
-    var num = 2;
-    var num2 = 3;
-    var num3 = 3.1416;
-    var num4 = 2.7182;
+    let num = 2;
+    let num2 = 3;
+    let num3 = 3.1416;
+    let num4 = 2.7182;
 
     console.log("\n\n------OPERADORES MATEMÁTICOS--------\n\n");
-    console.log("\nEjemplo de la operación (2+3)/3 ---> " + (num + num2)/num2 + "\n\n");
+    console.log("\nEjemplo de la operación (2+3)/3 ---> " + ((num + num2)/num2).toFixed(2) + "\n\n");
     console.log("\n\nEjemplo de la operación undifine/3.1416 ---> " + undefined/num3 + "\n\n");
     prueba(num4);
-    console.log("\n\nEjemplo de la operación (2+3)(3.1416*2.7182) ---> " + (num + num2)*(num3*num4) + "\n\n");
+    console.log("\n\nEjemplo de la operación (2+3)(3.1416*2.7182) ---> " + ((num + num2)*(num3*num4)).toFixed(3) + "\n\n");
 }
 
 function ejemplo_comparacion(){
-    var x,y;
+    let x,y;
     x=6;
     y=0.79;
 
@@ -51,7 +51,7 @@ function ejemplo_comparacion(){
 }
 
 function ejemplo_comparacion_strings() {
-    var a,b,z,u;
+    let a,b,z,u;
     a="buebos";
     b="buebos";
     z="hola";
@@ -75,9 +75,9 @@ function ejemplo_comparacion_strings() {
     {
         console.log("\nLas variables 'z' y 'u' strings no son iguales :>.\n\n");
     }
-
     
 }
+
 
 
 /** ---------- FUNCIÓN MAIN --------------- */
