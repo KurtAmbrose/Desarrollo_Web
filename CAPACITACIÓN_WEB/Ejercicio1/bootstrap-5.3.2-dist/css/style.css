@@ -1,25 +1,33 @@
 body {
     font-size: 16px;
     color: #e92f43;
-    background-color: rgb(32, 29, 29);
+    background: url(https://www.sis.uia.mx/images/main/fondo_desktop.jpg) no-repeat;
+    background-attachment: scroll;
+    background-size: auto;
 }
 
 /** ---------- ENCABEZADO -------------- */
+
+/** ---- Barra de navegación ---- */
 
 #encabezado {
     background-color: white;
     border: 0;
     border-radius: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 #logo {
     width: 70px;
     height: 90px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .texto_item {
     display: block;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 50px;
@@ -34,3 +42,16 @@ body {
     background-color: #e92f43;
     color: white;
 }
+
+.logo-ibero {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+/** ---- Fin Barra de navegación ---- */
+
+
+/** --> MEDIA QUERIES PARA DISPOSITIVOS MEDIANOS <-- */
