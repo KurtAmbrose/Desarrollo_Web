@@ -3,7 +3,6 @@ body {
     color: #e92f43;
     background: url(https://www.sis.uia.mx/images/main/fondo_desktop.jpg) no-repeat;
     background-attachment: scroll;
-    background-size: auto;
 }
 
 /** ---------- ENCABEZADO -------------- */
@@ -27,7 +26,7 @@ body {
 
 .texto_item {
     display: block;
-    padding-top: 40px;
+    padding-top: 45px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 50px;
