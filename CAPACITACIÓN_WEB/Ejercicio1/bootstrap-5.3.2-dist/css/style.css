@@ -1,7 +1,6 @@
 body {
     font-size: 16px;
     color: #e92f43;
-    background: url(https://www.sis.uia.mx/images/main/fondo_desktop.jpg) no-repeat;
     background-attachment: scroll;
 }
 
@@ -51,6 +50,43 @@ body {
 }
 
 /** ---- Fin Barra de navegación ---- */
+
+/** ---------- FIN DEL ENCABEZADO -------------- */
+
+
+/** ---------- CUERPO DE LA PÁGINA PRINCIPAL -------------- */
+
+#logo-compus {
+    background: url(https://www.sis.uia.mx/images/main/fondo_desktop.jpg) no-repeat;
+    background-position: center;
+    height: 600px;
+}
+
+#logo-compus div {
+    color: #e92f43;
+    height: 100px;
+
+}
+
+#logo-compus div button {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    opacity: .5;
+    color:#e92f43;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#logo-compus div button:hover {
+    color: white;
+    text-align: center;
+    background-color: #e92f43;
+    cursor: default;
+}
+
+
+/** ---------- FIN DEL CUERPO DE LA PÁGINA PRINCIPAL -------------- */
 
 
 /** --> MEDIA QUERIES PARA DISPOSITIVOS MEDIANOS <-- */
