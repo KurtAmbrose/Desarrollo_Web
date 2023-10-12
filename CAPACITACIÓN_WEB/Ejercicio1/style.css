@@ -118,9 +118,31 @@ p span {
     margin-top: 50px;
 }
 
-rect {
-    width:100%; 
-    height:100%;
+.servicios-tiles {
+    position: relative;
+    border: 2px dotted #e92f43;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+}
+
+.servicios-tiles span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+.servicios-tiles:hover {
+    border: 3px solid  #e92f43;
+    box-shadow: 0, 1px, 5px, 1px #e92f43;
 }
 
 
