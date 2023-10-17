@@ -112,14 +112,12 @@ p span {
 .row h2 {
     padding-top: 100px;
     margin-bottom: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 #servicios-row {
     margin-top: 50px;
-}
-
-.texto-servicios {
-    padding-right: 15px;
 }
 
 .servicios-tiles {
@@ -134,6 +132,7 @@ p span {
 .servicios-tiles img {
     width: 170px;
     height: 170px;
+    filter: invert(40%) sepia(64%) saturate(7115%) hue-rotate(338deg) brightness(94%) contrast(94%);
 }
 
 .servicios-tiles span {
@@ -146,19 +145,69 @@ p span {
     text-transform: uppercase;
     background-color: #000;
     color: #fff;
-    opacity: .8;
+    opacity: .7;
 }
 
 .servicios-tiles:hover {
     border: 3px solid  #e92f43;
     box-shadow: 0, 1px, 5px, 1px #e92f43;
+    opacity: .9;
 }
-
-
-
 
 /** ---------- FIN DEL CUERPO DE LA PÁGINA PRINCIPAL -------------- */
 
+/** ---------- PIE DE PÁGINA -------------- */
+
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #0f0f0f;
+    border-top: 0;
+}
+
+footer .container .row p:nth-of-type(1)>a {
+    background: url(https://www.sis.uia.mx/images/footer/ibero.png) left top no-repeat;
+}
+
+footer .container .row p:nth-of-type(2)>a {
+    background: url(https://www.sis.uia.mx/images/footer/brightspace.png) left top no-repeat;
+}
+
+footer .container .row p:nth-of-type(3)>a {
+    background: url(https://www.sis.uia.mx/images/footer/biblioteca.png) left top no-repeat;
+}
+
+footer .container .row p:nth-of-type(4)>a {
+    background: url(https://www.sis.uia.mx/images/footer/servicios_escolares.png) left top no-repeat;
+}
+
+footer .container .row p:nth-of-type(5)>a {
+    background: url(https://www.sis.uia.mx/images/footer/bolsa_de_trabajo.png) left top no-repeat;
+}
+
+footer .container .row p:nth-of-type(6)>a {
+    background: url(https://www.sis.uia.mx/images/footer/bloomberg.png) left top no-repeat;
+}
+
+footer .container .row p:nth-of-type(7)>a {
+    background: url(https://www.sis.uia.mx/images/footer/ibero909.png) left top no-repeat;
+}
+
+footer div a {
+    display: block;
+    width: 75px;
+    height: 69px;
+    text-indent: -9999px;
+    z-index: -1;
+    opacity: .7;
+}
+
+footer div a:hover {
+    opacity: .9;
+}
+
+/** ---------- FIN DEL PIE DE PÁGINA -------------- */
 
 /** --> MEDIA QUERIES PARA DISPOSITIVOS PEQUEÑOS <-- */
 
@@ -166,5 +215,6 @@ p span {
 
     .row h2 {
         padding-top: 10px;
+        padding-left: 0;
     }
 }
