@@ -49,6 +49,16 @@ body {
     margin-right: 10px;
 }
 
+#togg {
+    margin-left: 15px;
+    color: #e92f43;
+}
+
+#togg span {
+    filter: invert(40%) sepia(64%) saturate(7115%) hue-rotate(338deg) brightness(94%) contrast(94%);
+}
+
+
 /** ---- Fin Barra de navegación ---- */
 
 /** ---------- FIN DEL ENCABEZADO -------------- */
@@ -245,4 +255,5 @@ footer div a:hover {
         padding-left: 30px;
         padding-right: 30px;
     }
+
 }
