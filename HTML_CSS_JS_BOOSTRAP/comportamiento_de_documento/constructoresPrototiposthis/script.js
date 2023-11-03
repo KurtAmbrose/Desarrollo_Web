@@ -1,31 +1,3 @@
-function test() {
-    console.clear();
-    console.log(this);                  // Aquí se está imprimiendo el objeto global que es el sistema operativo de windows.
-    this.myName = "Diego el guapo";     // Le asignamos una propiedad nueva: 'myNmae'
-}
-
-
-/**
- * @brief función principal
- */
-
-function main() {
-    test();
-    console.log(this.myName);
-    console.clear();
-}
-
-/** EJECUCIÓN DE FUNCIONES -------
- *                               |
- *                               |
- *                               |
- *                               V    */
-
-main();
-
-
-
-
 /**
  * @title CONSTRUCTORES
  */
