@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "Bell-B118",
+        "rango": "Jefe de suboficiales",
+        "Nservicio": "S-B118"
+    },
+    {
+        "nombre": "Sarah-A018",
+        "rango": "Jefe de suboficiales",
+        "Nservicio": "S-A018"
+    },
+    {
+        "nombre": "Jun-A266",
+        "rango": "Oficial Técnico",
+        "Nservicio": "S-A266"
+    },
+    {
+        "nombre": "Elena-A201",
+        "rango": "Comandante",
+        "Nservicio": "S-A201"
+    }
+]
