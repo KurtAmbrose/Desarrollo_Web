@@ -1,4 +1,4 @@
-// MANEJO DE EVENTOS
+// ARGUMENTO "EVENT"
 
 
 //Se añade este evento para poder cargar el archivo de javascript en caso de que este esté en el head del documento HTML
@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded",
         // FUNCIÓN QUE DICE "HOLA"
 
         function decirHola(event) {
+
+            console.log(event);
 
             //Guarda el contenido de la caja de texto en una variable y luego guarda el saludo completo en otra variable 
             let nombre, titulo; 
@@ -28,7 +30,7 @@ document.addEventListener("DOMContentLoaded",
             {
                 titulo = document.querySelector("h1").textContent; //con textContent, sólo se cambia el contenido que hay dentro de la etiqueta, poniendolo sólo como texto
 
-                titulo = titulo + " y feliz viernes!";
+                titulo += " y feliz viernes!";
 
                 document.querySelector("h1").textContent = titulo; //se pasa por referencia y se actualiza
 
@@ -38,8 +40,18 @@ document.addEventListener("DOMContentLoaded",
 
         //Unubstrusive event binding
         document.querySelector("button").addEventListener("click", decirHola); //ejecuta la función con el botón sin la necesidad de poner onClick en el html.
-                                                                            //Lo que imprime es la etiqueta a la que hace referencia
+                                                                               //Lo que imprime es la etiqueta a la que hace referencia
+        document.querySelector("body").addEventListener("mousemove", 
+        
+            function(event)
+            {
+                if(event.shiftKey === true) //shifKey sirve para cuando el usuario aprieta la tecla shift. En este if, si se aprieta la tecla "shift" del teclado, entonces se va imprimir las coordenadas del cursor
+                {
+                    console.log("x: " + event.clientX); //clientX sirve para saber la posición horizontal del mouse
+                    console.log("y: " + event.clientY); //clienty sirve para saber la posición vertical del mouse
+                }
+            }
 
-        document.querySelector("button").onclick = decirHola; //otra opción a la de arriba
+        );
     }
 );
